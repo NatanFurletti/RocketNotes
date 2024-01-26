@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: 105px 128 auto 64px;
+  grid-template-rows: 105px 128px auto 64px;
   grid-template-areas:
     "brand header"
     "menu search"
@@ -47,10 +47,22 @@ export const Menu = styled.ul`
 `;
 export const Search = styled.div`
   grid-area: search;
+  padding: 64px 64px 0;
 `;
 export const Content = styled.div`
   grid-area: content;
 `;
 export const NewNote = styled.button`
-  grid-area: newnte;
+  grid-area: newnote;
+
+  background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    margin-right: 8px;
+  }
 `;
