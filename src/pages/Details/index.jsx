@@ -1,10 +1,9 @@
-import { Container } from "./styles";
+import { Container, Links, Content } from "./styles";
 
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { Section } from "../../components/Section";
 import { ButtonText } from "../../components/ButtonText";
-import { Links } from "./styles";
 import { Tag } from "../../components/Tag";
 
 export function Details() {
@@ -12,25 +11,38 @@ export function Details() {
     <Container>
       <Header />
 
-      <ButtonText title="Excluir nota" />
+      <main>
+        <Content>
+          <ButtonText title="Excluir nota" />
 
-      <Section title="Links úteis">
-        <Links>
-          <li>
-            <a href="https://www.github.com">Github</a>
-          </li>
-          <li>
-            <a href="https://www.github.com">Github</a>
-          </li>
-        </Links>
-      </Section>
+          <h1>Introdução ao Rest</h1>
 
-      <Section title="Marcadores">
-        <Tag title="express" />
-        <Tag title="node.js" />
-      </Section>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            quae nesciunt harum! Maxime quos iure vitae pariatur, dolorem ad
+            inventore numquam soluta, asperiores facere ipsa minima? Optio quas
+            incidunt deserunt.
+          </p>
 
-      <Button title="Voltar" />
+          <Section title="Links úteis">
+            <Links>
+              <li>
+                <a href="https://www.github.com">Github</a>
+              </li>
+              <li>
+                <a href="https://www.github.com">Github</a>
+              </li>
+            </Links>
+          </Section>
+
+          <Section title="Marcadores">
+            <Tag title="express" />
+            <Tag title="node.js" />
+          </Section>
+
+          <Button title="Voltar" />
+        </Content>
+      </main>
     </Container>
   );
 }
